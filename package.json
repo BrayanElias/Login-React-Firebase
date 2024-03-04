@@ -2,7 +2,7 @@
   "name": "linktree",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https:///BrayanElias.github.io/Login-React-Firebase",
+  "homepage": "https:///BrayanElias.github.io/Login-React-Firebase/build",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
