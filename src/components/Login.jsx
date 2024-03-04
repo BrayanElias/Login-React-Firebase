@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import toast, { Toaster } from 'react-hot-toast';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faEye, faEyeSlash } from '@fortawesome/free-solid-svg-icons';
 
 // Importar las imágenes del carrusel
 import Uno from '../images/zyzz1.jpg';
@@ -18,6 +20,7 @@ function Login() {
     const [registro, setRegistro] = useState(false); // Estado para manejar el modo de registro
     const [mostrarContraseña, setMostrarContraseña] = useState(false); // Estado para mostrar/ocultar la contraseña
     const [activeIndex, setActiveIndex] = useState(0); // Estado para mantener el índice de la imagen activa en el carrusel
+    const [iconoMostrar, setIconoMostrar] = useState(faEye); // Estado para controlar el icono del botón
 
     // Función para pasar a la siguiente diapositiva del carrusel
     const nextSlide = () => {
@@ -62,6 +65,11 @@ function Login() {
         }
     };
 
+    // Cambiar el icono del botón entre el ojo y el ojo tachado
+    useEffect(() => {
+        setIconoMostrar(mostrarContraseña ? faEyeSlash : faEye);
+    }, [mostrarContraseña]);
+
     return (
         <div className='row container p-4 login'>
             <div className="col-md-6">
@@ -101,7 +109,7 @@ function Login() {
             <div className="col-md-5">
                 <div className='mt-5 ms-5'>
                     {/* Encabezado del formulario */}
-                    <h1 className='text-center fs-7'>{registro ? "Regístrate" : "Iniciar Sesión"}</h1>
+                    <h1 className='text-center fs-7 fw-bold'>{registro ? "Regístrate" : "Iniciar Sesión"}</h1>
                     {/* Formulario */}
                     <form className='form-login' onSubmit={handlerSubmit} >
                         <div className='mb-3'>
@@ -115,8 +123,8 @@ function Login() {
                             <div className="input-group">
                                 <input className='form-control' type={mostrarContraseña ? "text" : "password"} placeholder='Ingresar contraseña' id="contraseña" minLength="6" required />
                                 {/* Botón para mostrar/ocultar la contraseña */}
-                                <button className="btn btn-outline-secondary" type="button" onClick={() => setMostrarContraseña(!mostrarContraseña)}>
-                                    {mostrarContraseña ? "Ocultar" : "Mostrar"}
+                                <button className="btn btn-outline-secondary" type="button" style={{ borderColor: "#DEE2E6" }} onClick={() => setMostrarContraseña(!mostrarContraseña)}>
+                                    <FontAwesomeIcon icon={iconoMostrar} />
                                 </button>
                             </div>
                         </div>
