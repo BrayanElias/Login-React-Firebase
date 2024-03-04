@@ -117,7 +117,7 @@ function Login() {
                             <div className="input-group">
                                 <input className='form-control' type={mostrarContraseña ? "text" : "password"} placeholder='Ingresar contraseña' id="contraseña" minLength="6" required />
                                 {/* Botón para mostrar/ocultar la contraseña */}
-                                <button className="btn btn-outline-secondary" type="button" style={{ borderColor: "#DEE2E6" }} onClick={() => setMostrarContraseña(!mostrarContraseña)}>
+                                <button className="btn btn-outline-secondary bg-white text-secondary" type="button" style={{ borderColor: "#DEE2E6" }} onClick={() => setMostrarContraseña(!mostrarContraseña)}>
                                     <FontAwesomeIcon icon={mostrarContraseña ? faEyeSlash : faEye} /> {/* Usar el icono correcto */}
                                 </button>
                             </div>
