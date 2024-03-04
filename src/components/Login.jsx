@@ -101,19 +101,19 @@ function Login() {
             </div>
             {/* Sección del formulario de inicio de sesión/registro */}
             <div className="col-md-5 mx-auto"> {/* Alinear el formulario al centro */}
-                <div className='mt-5'>
+                <div className='mt-5 contenedor-form'>
                     {/* Encabezado del formulario */}
-                    <h1 className='text-center fs-7 fw-bold'>{registro ? "Regístrate" : "Iniciar Sesión"}</h1>
+                    <h1 className='text-center fs-7 fw-bold title-form' >{registro ? "Regístrate" : "Iniciar Sesión"}</h1>
                     {/* Formulario */}
                     <form className='form-login' onSubmit={handlerSubmit} >
                         <div className='mb-3'>
                             {/* Campo de correo electrónico */}
-                            <label className='form-label'>Dirección de Email:</label>
+                            <label className='form-label title-email'>Dirección de Email:</label>
                             <input className='form-control' type="email" placeholder='Ingresar email' id="email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" required />
                         </div>
                         <div className='mb-3'>
                             {/* Campo de contraseña */}
-                            <label className='form-label'>Contraseña:</label>
+                            <label className='form-label title-email'>Contraseña:</label>
                             <div className="input-group">
                                 <input className='form-control' type={mostrarContraseña ? "text" : "password"} placeholder='Ingresar contraseña' id="contraseña" minLength="6" required />
                                 {/* Botón para mostrar/ocultar la contraseña */}

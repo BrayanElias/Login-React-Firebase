@@ -5,6 +5,16 @@
   justify-content: space-between;
   flex-direction: row-reverse;
 }
+.title-form {
+  font-family: "Kalam", cursive;
+  font-weight: 300;
+  font-style: normal;
+}
+.title-email {
+  font-family: "Kalam", cursive;
+  font-weight: 300;
+  font-style: normal;
+}
 .tamaño-imagen {
   width: 100%;
   height: 590px;
