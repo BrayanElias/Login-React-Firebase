@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/Login-React-Firebase/build/static/css/main.d7c5866f.css",
-    "main.js": "/Login-React-Firebase/build/static/js/main.c39aaa60.js",
+    "main.js": "/Login-React-Firebase/build/static/js/main.5972f92b.js",
     "static/media/zyzz3.jpg": "/Login-React-Firebase/build/static/media/zyzz3.577cfcfac9a9d45aeaad.jpg",
     "static/media/zyzz4.jpg": "/Login-React-Firebase/build/static/media/zyzz4.551add58d18a227f74e5.jpg",
     "static/media/zyzz2.jpg": "/Login-React-Firebase/build/static/media/zyzz2.dd8ad8eac35d52d1fd40.jpg",
     "static/media/zyzz1.jpg": "/Login-React-Firebase/build/static/media/zyzz1.fdbff716bc4d078e5e54.jpg",
     "index.html": "/Login-React-Firebase/build/index.html",
     "main.d7c5866f.css.map": "/Login-React-Firebase/build/static/css/main.d7c5866f.css.map",
-    "main.c39aaa60.js.map": "/Login-React-Firebase/build/static/js/main.c39aaa60.js.map"
+    "main.5972f92b.js.map": "/Login-React-Firebase/build/static/js/main.5972f92b.js.map"
   },
   "entrypoints": [
     "static/css/main.d7c5866f.css",
-    "static/js/main.c39aaa60.js"
+    "static/js/main.5972f92b.js"
   ]
 }

@@ -122,8 +122,8 @@ function Home({ correoUsuario }) {
                 </div>
                 {/* Sección para mostrar la lista de usuarios */}
                 <div className="col-md-8">
-                    <h2 className='text-center mb-5'>Lista de usuarios</h2>
-                    <div className='container card '>
+                    <h2 className='text-center mb-4 mt-md-0 mt-3'>Lista de usuarios</h2>
+                    <div className='container card'>
                         <div className='card-body'>
                             {/* Iterar sobre la lista de usuarios y mostrar cada uno */}
                             {lista.map((usuario) => (
