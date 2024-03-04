@@ -1,16 +1,17 @@
 {
   "files": {
-    "main.css": "/Login-React-Firebase/build/static/css/main.22b42ac7.css",
-    "main.js": "/Login-React-Firebase/build/static/js/main.695e5077.js",
-    "static/media/zyzz1.jpg": "/Login-React-Firebase/build/static/media/zyzz1.85db7c6510fcb25db4e5.jpg",
-    "static/media/zyzz2.jpg": "/Login-React-Firebase/build/static/media/zyzz2.77c9bdb12bec746eefa6.jpg",
-    "static/media/zyzz3.jpg": "/Login-React-Firebase/build/static/media/zyzz3.d251214375ec87139d8a.jpg",
+    "main.css": "/Login-React-Firebase/build/static/css/main.fbf798aa.css",
+    "main.js": "/Login-React-Firebase/build/static/js/main.0d4cfe96.js",
+    "static/media/zyzz3.jpg": "/Login-React-Firebase/build/static/media/zyzz3.577cfcfac9a9d45aeaad.jpg",
+    "static/media/zyzz2.jpg": "/Login-React-Firebase/build/static/media/zyzz2.dd8ad8eac35d52d1fd40.jpg",
+    "static/media/zyzz1.jpg": "/Login-React-Firebase/build/static/media/zyzz1.fdbff716bc4d078e5e54.jpg",
+    "static/media/zyzz4.jpg": "/Login-React-Firebase/build/static/media/zyzz4.d251214375ec87139d8a.jpg",
     "index.html": "/Login-React-Firebase/build/index.html",
-    "main.22b42ac7.css.map": "/Login-React-Firebase/build/static/css/main.22b42ac7.css.map",
-    "main.695e5077.js.map": "/Login-React-Firebase/build/static/js/main.695e5077.js.map"
+    "main.fbf798aa.css.map": "/Login-React-Firebase/build/static/css/main.fbf798aa.css.map",
+    "main.0d4cfe96.js.map": "/Login-React-Firebase/build/static/js/main.0d4cfe96.js.map"
   },
   "entrypoints": [
-    "static/css/main.22b42ac7.css",
-    "static/js/main.695e5077.js"
+    "static/css/main.fbf798aa.css",
+    "static/js/main.0d4cfe96.js"
   ]
 }

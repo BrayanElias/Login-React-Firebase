@@ -1,4 +1,18 @@
+.login {
+  font-family: "Caveat", cursive;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+}
 .tamaño-imagen {
   width: 100%;
   height: 590px;
+  border-radius: 20px;
+}
+.form-login {
+  font-size: 40px;
+}
+.form-control {
+  font-size: 20px;
 }

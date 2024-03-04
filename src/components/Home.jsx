@@ -39,7 +39,7 @@ function Home({ correoUsuario }) {
             // Establecer la lista de usuarios en el estado
             setLista(usuarios);
         } catch (error) {
-            console.log(error);
+            alert(error);
         }
     }
 
