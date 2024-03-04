@@ -3,6 +3,7 @@ import toast, { Toaster } from 'react-hot-toast';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEye, faEyeSlash } from '@fortawesome/free-solid-svg-icons'; // Importar correctamente los iconos
 
+
 // Importar las imágenes del carrusel
 import Uno from '../images/zyzz1.jpg';
 import Dos from '../images/zyzz2.jpg';

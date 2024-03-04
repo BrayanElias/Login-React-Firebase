@@ -96,9 +96,9 @@ function Home({ correoUsuario }) {
     }
 
     return (
-        <div className='container'>
+        <div className='container text-white home'>
             {/* Mostrar el nombre de usuario */}
-            <p>Bienvenido, <strong>{correoUsuario}.</strong> Haz iniciado sesión</p>
+            <p className='fs-5'>Bienvenido, <strong>{correoUsuario}.</strong> Haz iniciado sesión</p>
             {/* Botón para cerrar sesión */}
             <button className='btn btn-primary' onClick={() => signOut(auth)}>Cerrar sesión</button>
             <hr />
