@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import toast, { Toaster } from 'react-hot-toast';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEye, faEyeSlash } from '@fortawesome/free-solid-svg-icons';
+import { faEye, faEyeSlash } from '@fortawesome/free-solid-svg-icons'; // Importar correctamente los iconos
 
 // Importar las imágenes del carrusel
 import Uno from '../images/zyzz1.jpg';
@@ -20,7 +20,6 @@ function Login() {
     const [registro, setRegistro] = useState(false); // Estado para manejar el modo de registro
     const [mostrarContraseña, setMostrarContraseña] = useState(false); // Estado para mostrar/ocultar la contraseña
     const [activeIndex, setActiveIndex] = useState(0); // Estado para mantener el índice de la imagen activa en el carrusel
-    const [iconoMostrar, setIconoMostrar] = useState(faEye); // Estado para controlar el icono del botón
 
     // Función para pasar a la siguiente diapositiva del carrusel
     const nextSlide = () => {
@@ -65,14 +64,9 @@ function Login() {
         }
     };
 
-    // Cambiar el icono del botón entre el ojo y el ojo tachado
-    useEffect(() => {
-        setIconoMostrar(mostrarContraseña ? faEyeSlash : faEye);
-    }, [mostrarContraseña]);
-
     return (
-        <div className='row container p-4 login'>
-            <div className="col-md-6">
+        <div className='container p-4 login'>
+            <div className="col-md-6 mx-auto"> {/* Alinear el formulario al centro */}
                 {/* Carrusel de imágenes */}
                 <div id="carouselExample" className="carousel slide">
                     <div className="carousel-inner">
@@ -94,20 +88,20 @@ function Login() {
                         </div>
                     </div>
                     {/* Botón para la diapositiva anterior */}
-                    <button className="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                    {/* <button className="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
                         <span className="carousel-control-prev-icon" aria-hidden="true"></span>
                         <span className="visually-hidden">Previous</span>
-                    </button>
+                    </button> */}
                     {/* Botón para la diapositiva siguiente */}
-                    <button className="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                    {/* <button className="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
                         <span className="carousel-control-next-icon" aria-hidden="true"></span>
                         <span className="visually-hidden">Next</span>
-                    </button>
+                    </button> */}
                 </div>
             </div>
             {/* Sección del formulario de inicio de sesión/registro */}
-            <div className="col-md-5">
-                <div className='mt-5 ms-5'>
+            <div className="col-md-5 mx-auto"> {/* Alinear el formulario al centro */}
+                <div className='mt-5'>
                     {/* Encabezado del formulario */}
                     <h1 className='text-center fs-7 fw-bold'>{registro ? "Regístrate" : "Iniciar Sesión"}</h1>
                     {/* Formulario */}
@@ -124,12 +118,12 @@ function Login() {
                                 <input className='form-control' type={mostrarContraseña ? "text" : "password"} placeholder='Ingresar contraseña' id="contraseña" minLength="6" required />
                                 {/* Botón para mostrar/ocultar la contraseña */}
                                 <button className="btn btn-outline-secondary" type="button" style={{ borderColor: "#DEE2E6" }} onClick={() => setMostrarContraseña(!mostrarContraseña)}>
-                                    <FontAwesomeIcon icon={iconoMostrar} />
+                                    <FontAwesomeIcon icon={mostrarContraseña ? faEyeSlash : faEye} /> {/* Usar el icono correcto */}
                                 </button>
                             </div>
                         </div>
                         {/* Botón para enviar el formulario */}
-                        <button className='btn btn-lg btn-primary' type='submit'>
+                        <button className='btn btn-lg btn-primary d-block mx-auto' type='submit'>
                             {registro ? "Regístrate" : "Iniciar Sesión"}
                         </button>
                     </form>
