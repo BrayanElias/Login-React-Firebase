@@ -32,7 +32,7 @@ function Login() {
     useEffect(() => {
         const interval = setInterval(nextSlide, 4000); // Cambiar de diapositiva cada 3 segundos
         return () => clearInterval(interval);
-    }, [activeIndex]);
+    }, [nextSlide]);
 
     // Función para manejar el envío del formulario de inicio de sesión/registro
     const handlerSubmit = async (e) => {
