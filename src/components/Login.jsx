@@ -25,14 +25,22 @@ function Login() {
     // Función para pasar a la siguiente diapositiva del carrusel
     const nextSlide = () => {
         const nextIndex = (activeIndex + 1) % 4; // Ajustar 4 al número total de imágenes en tu carrusel
-        setActiveIndex(nextIndex);
+        setActiveIndex(nextIndex); 
     };
 
     // Efecto para cambiar de diapositiva automáticamente cada 2 segundos
     useEffect(() => {
+        // Función para pasar a la siguiente diapositiva del carrusel
+        const nextSlide = () => {
+            const nextIndex = (activeIndex + 1) % 4; // Ajustar 4 al número total de imágenes en tu carrusel
+            setActiveIndex(nextIndex);
+        };
+
+        // Efecto para cambiar de diapositiva automáticamente cada 2 segundos
         const interval = setInterval(nextSlide, 4000); // Cambiar de diapositiva cada 3 segundos
         return () => clearInterval(interval);
-    }, [nextSlide]);
+    }, [activeIndex]);
+
 
     // Función para manejar el envío del formulario de inicio de sesión/registro
     const handlerSubmit = async (e) => {
