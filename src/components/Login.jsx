@@ -23,23 +23,16 @@ function Login() {
     const [activeIndex, setActiveIndex] = useState(0); // Estado para mantener el índice de la imagen activa en el carrusel
 
     // Función para pasar a la siguiente diapositiva del carrusel
-    const nextSlide = () => {
-        const nextIndex = (activeIndex + 1) % 4; // Ajustar 4 al número total de imágenes en tu carrusel
-        setActiveIndex(nextIndex); 
-    };
-
-    // Efecto para cambiar de diapositiva automáticamente cada 2 segundos
     useEffect(() => {
-        // Función para pasar a la siguiente diapositiva del carrusel
         const nextSlide = () => {
-            const nextIndex = (activeIndex + 1) % 4; // Ajustar 4 al número total de imágenes en tu carrusel
+            const nextIndex = (activeIndex + 1) % 4;
             setActiveIndex(nextIndex);
         };
-
-        // Efecto para cambiar de diapositiva automáticamente cada 2 segundos
-        const interval = setInterval(nextSlide, 4000); // Cambiar de diapositiva cada 3 segundos
+    
+        const interval = setInterval(nextSlide, 4000);
         return () => clearInterval(interval);
     }, [activeIndex]);
+    
 
 
     // Función para manejar el envío del formulario de inicio de sesión/registro
